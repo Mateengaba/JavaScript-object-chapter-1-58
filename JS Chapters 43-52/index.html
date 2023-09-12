@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    .borderImg{
+        border: 1px solid black;
+        box-shadow:beige;
+    }
+</style>
+<body>
+
+    <h5>Assignment # 43-48</h5> 
+
+    <p>    Quostion#1    </p>
+
+    <button onclick="showAlert()">Show alert</button> <br/>
+
+    
+    <p>    Quostion#2    </p>
+
+    <h4>Mobile Phone Lookup</h4> <br/>
+
+        <img src="./assets/mobile 1.jpg" width="200" height="150" onclick="altrImg()"  class="borderImg" alt=""> 
+        <img src="./assets/mobile 2.jpg" width="200" height="150" onclick="altrImg()"  class="borderImg" alt="">
+        <img src="./assets/mobile 3.jpg" width="200" height="150" onclick="altrImg()"  class="borderImg" alt="">
+        <img src="./assets/mobile 4.jpg" width="200" height="150" onclick="altrImg()"  class="borderImg" alt="">
+<br/><br/>
+
+<p>    Quostion#3    </p>
+
+
+    <table  id="student-table">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="buttonDelete(this)" >Delete</button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="buttonDelete(this)" >Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="buttonDelete(this)" >Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="buttonDelete(this)" >Delete</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>John</td>
+                <td>12</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Jane</td>
+                <td>11</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Bob</td>
+                <td>10</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Dumpy</td>
+                <td>12</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Bumpy</td>
+                <td>11</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Bablu</td>
+                <td>10</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>applet</td>
+                <td>10</td>
+                <td><button onclick="buttonDelete(this)">Delete</button></td>
+              </tr>
+        </tbody>
+    </table>
+<br/>
+
+<p>    Quostion#4   </p>
+
+
+    <img src="./assets/download.jfif" width="250" height="250" onmouseover="handlimg('in')" onmouseout="handlimg('out')" id="carImg" alt="">
+    
+
+
+
+    <p>    Quostion#5    </p>
+
+    <div>
+        <button id="decrease-btn">-</button>
+        
+        <span id="counter"> 0 </span>
+        <button id="increase-btn">+</button>
+      </div>
+
+
+
+<h5>Assignment # 49-52</h5>
+<p>    Quostion#1    </p>
+
+<br/><br/>
+
+ <input type="text" placeholder="First name" id="firstName">
+    <br>
+    <br>
+    <input type="text" placeholder="last name" id="lastName">
+    <br>
+    <br>
+    <input id="email" type="email" placeholder="Email">
+    <br>
+    <br>
+    <input type="password" placeholder="Password" id="password">
+    <br>
+    <br>
+    <button onclick="handleSubmit()">SUBMIT</button>
+
+
+    <p>    Quostion#2   </p>
+
+
+    <p id="para2">Lorem ipsum dolor sit amet.</p>
+    <button >    <a href="javascript:void(0)" onclick="seeMore(this)">see more</a>
+    </button>
+<br/><br/><br/>
+
+
+<p>    Quostion#3   </p>
+
+
+<div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+    <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Age</th>
+    </tr>
+    
+    <tr id="row1">
+    <td id="name_row1">Mateen</td>
+    <td id="country_row1">Pakistan</td>
+    <td id="age_row1">33</td>
+    <td>
+    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+    </td>
+    </tr>
+    
+    <tr id="row2">
+    <td id="name_row2">Yousuf</td>
+    <td id="country_row2">Pakistan</td>
+    <td id="age_row2">21</td>
+    <td>
+    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+    </td>
+    </tr>
+    
+    <tr id="row3">
+    <td id="name_row3">Rahul</td>
+    <td id="country_row3">India</td>
+    <td id="age_row3">19</td>
+    <td>
+    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+    </td>
+    </tr>
+    
+    <tr>
+    <td><input type="text" id="new_name"></td>
+    <td><input type="text" id="new_country"></td>
+    <td><input type="text" id="new_age"></td>
+    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+    </tr>
+    
+    </table>
+    </div>
+    
+
+
+</body>
+
+<script src="./app.js"></script>
+</html>
